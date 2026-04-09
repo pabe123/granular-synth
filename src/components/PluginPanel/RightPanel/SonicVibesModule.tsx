@@ -1,3 +1,4 @@
+import type { JSX } from 'react'
 import { Moon, Sun, Flame } from 'lucide-react'
 import { useSynth } from '../../../hooks/useSynth'
 import type { VibeType } from '../../../types/synth'

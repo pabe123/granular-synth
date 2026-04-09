@@ -1,3 +1,4 @@
+import type { JSX } from 'react'
 import { Piano, Guitar, Wind, Mic, Music } from 'lucide-react'
 import { useSynth } from '../../../hooks/useSynth'
 import type { SampleName } from '../../../types/synth'
