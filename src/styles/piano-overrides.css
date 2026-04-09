@@ -1,0 +1,92 @@
+/* react-piano — color-only overrides, no layout changes */
+
+/* White keys */
+.ReactPiano__Key--natural {
+  background: #ffffff !important;
+  border: 1px solid rgba(63, 63, 63, 0.15) !important;
+  border-top: none !important;
+  cursor: pointer;
+  transition: background 0.06s ease;
+}
+
+.ReactPiano__Key--natural:hover {
+  background: #f4f4f4 !important;
+}
+
+.ReactPiano__Key--natural.ReactPiano__Key--active {
+  background: #d0d0d0 !important;
+  border-color: rgba(63, 63, 63, 0.15) !important;
+}
+
+/* Black keys */
+.ReactPiano__Key--accidental {
+  background: #3a3a3a !important;
+  border: none !important;
+  border-radius: 0 0 3px 3px !important;
+  cursor: pointer;
+  transition: background 0.06s ease;
+}
+
+.ReactPiano__Key--accidental:hover {
+  background: #555555 !important;
+}
+
+.ReactPiano__Key--accidental.ReactPiano__Key--active {
+  background: #1a1a1a !important;
+}
+
+/* Note labels */
+.ReactPiano__NoteLabelContainer {
+  pointer-events: none;
+}
+
+.ReactPiano__NoteLabel {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 8px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  color: rgba(63, 63, 63, 0.4) !important;
+  pointer-events: none;
+}
+
+.ReactPiano__Key--natural.ReactPiano__Key--active .ReactPiano__NoteLabel {
+  color: rgba(63, 63, 63, 0.5) !important;
+}
+
+.ReactPiano__Key--accidental.ReactPiano__Key--active .ReactPiano__NoteLabel {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Dark mode */
+html.dark .ReactPiano__Key--natural {
+  background: #2c2c2c !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark .ReactPiano__Key--natural:hover {
+  background: #363636 !important;
+}
+
+html.dark .ReactPiano__Key--natural.ReactPiano__Key--active {
+  background: #555555 !important;
+}
+
+html.dark .ReactPiano__Key--natural.ReactPiano__Key--active .ReactPiano__NoteLabel {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+html.dark .ReactPiano__Key--accidental {
+  background: #111111 !important;
+}
+
+html.dark .ReactPiano__Key--accidental:hover {
+  background: #1f1f1f !important;
+}
+
+html.dark .ReactPiano__Key--accidental.ReactPiano__Key--active {
+  background: #d0d0d0 !important;
+}
+
+html.dark .ReactPiano__NoteLabel {
+  color: rgba(255, 255, 255, 0.25) !important;
+}
